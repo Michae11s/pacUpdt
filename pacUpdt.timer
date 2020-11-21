@@ -1,0 +1,9 @@
+[Unit]
+Description=Run PacUpdt every 30 min
+
+[Timer]
+OnBootSec=60sec
+OnUnitActiveSec=10min
+
+[Install]
+WantedBy=timers.target

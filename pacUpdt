@@ -1,0 +1,22 @@
+#!/bin/bash
+# Arch upgradeable packages
+
+plist=$(checkupdates)
+
+if [ "$plist" == "" ]; then
+    pcount=0
+else
+    pcount=`echo "$plist" | wc -l`
+fi
+
+echo "$pcount" | sudo tee /etc/pacUpdt/pacCount
+
+alist=$(auracle sync)
+
+if [ "$alist" == "" ]; then
+    acount=0
+else
+    acount=`echo "$alist" | wc -l`
+fi
+
+echo "$acount" | sudo tee /etc/pacUpdt/aurCount

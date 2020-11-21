@@ -1,0 +1,7 @@
+[Unit]
+Description=Writes number of available updates to text file
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/pacUpdt
+Restart=no
