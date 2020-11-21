@@ -17,7 +17,7 @@ package() {
     cd $pkgdir
 
     mkdir -p usr/bin
-    mkdir -p opt/pacUpdt
+    mkdir -p etc/pacUpdt
     mkdir -p usr/lib/systemd/system
 
     cp $srcdir/pacUpdt usr/bin
