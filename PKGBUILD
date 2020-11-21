@@ -1,6 +1,6 @@
 # Maintainer: Kyle Michaels <Kyle@michaels.pro>
 pkgname=pacUpdt
-pkgver=1.03
+pkgver=1.04
 pkgrel=1
 pkgdesc="Runs checkupdates from pacman-contrib, counts the lines and writes to /etc/pacUpdt/count, then able to be used in things like neofetch"
 arch=('any')
